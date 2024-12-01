@@ -9,6 +9,10 @@
                       "webNameG.tv",
                        "webNameH.net",
                             };
+```
+Website lar ro'yxati .Agar dastlab oxirgi index!=
+Linq so'rovi elon qilinishi:
+``` C#
         var webAddrs = from addr in websites
                        where addr.LastIndexOf('.') != -1
                        group addr by
